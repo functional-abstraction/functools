@@ -1,0 +1,17 @@
+{
+	"debug": false,
+	"code": {
+		"test": [
+			"test",
+			"js"
+		],
+		"main": [
+			"js",
+			"dist",
+			"functools.js"
+		]
+	},
+	"ns": "functools",
+	"out": "js/dist/",
+	"src": "js/src/"
+}

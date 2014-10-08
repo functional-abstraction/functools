@@ -1,0 +1,32 @@
+{
+	"bugs": {
+		"url": "https://github.com/aureooms/js-functools/issues"
+	},
+	"dependencies": {},
+	"homepage": "http://aureooms.github.io/js-functools/",
+	"version": "0.0.0",
+	"keywords": [
+		"bricks",
+		"function",
+		"functional",
+		"javascript",
+		"js"
+	],
+	"scripts": {
+		"build": "./node_modules/.bin/aureooms-node-package-build",
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"doc": "./node_modules/.bin/groc"
+	},
+	"devDependencies": {
+		"aureooms-node-package": "^1.1.3"
+	},
+	"license": "AGPL-3.0",
+	"main": "js/dist/functools.js",
+	"description": "functions code bricks for JavaScript",
+	"repository": {
+		"url": "https://github.com/aureooms/js-functools.git",
+		"type": "git"
+	},
+	"author": "aureooms",
+	"name": "aureooms-js-functools"
+}
