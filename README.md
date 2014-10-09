@@ -13,3 +13,8 @@ functions code bricks for JavaScript
 [![Code Climate](https://codeclimate.com/github/aureooms/js-functools.png)](https://codeclimate.com/github/aureooms/js-functools)
 [![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-functools.svg)](https://www.npmjs.org/package/aureooms-js-functools)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-functools.svg)](https://github.com/aureooms/js-functools/issues)
+
+reference:
+
+  - https://docs.python.org/3/library/functions.html
+  - https://docs.python.org/3/library/functools.html
