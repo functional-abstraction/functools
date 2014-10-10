@@ -8,16 +8,18 @@
 
 var chain = function () {
 
-	var i, len, fn;
+	var i, len, args;
 
-	len = arguments.length
+	args = arguments;
+
+	len = args.length;
 
 	return function ( obj ) {
 
 		i = len;
 
 		while ( i-- ) {
-			obj = arguments[i]( obj );
+			obj = args[i]( obj );
 		}
 
 		return obj;
