@@ -18,3 +18,4 @@ reference:
 
   - https://docs.python.org/3/library/functions.html
   - https://docs.python.org/3/library/functools.html
+  - https://github.com/lodash/lodash
