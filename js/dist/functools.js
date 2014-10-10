@@ -36,13 +36,15 @@ var curry = function ( callable, arity ) {
 
 	var iter = function () {
 
-		var len;
+		var len, args;
 
-		len = arguments.length;
+		args = Array.prototype.slice.call( arguments, 0 );
+
+		len = args.length;
 
 		arity -= len;
 
-		callable = partial( callable, null, arguments );
+		callable = partial( callable, null, args );
 
 		if ( arity <= 0 ) {
 			return callable();
