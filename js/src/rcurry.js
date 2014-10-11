@@ -2,27 +2,38 @@
 
 var rcurry = function ( callable, arity ) {
 
-	var iter = function () {
+	return function () {
 
-		var len;
+		var fn, i;
 
-		len = arguments.length;
+		fn = callable;
+		i = arity;
 
-		arity -= len;
+		var iter = function () {
 
-		callable = rpartial( callable, null, arguments );
+			var len, args;
 
-		if ( arity <= 0 ) {
-			return callable();
-		}
+			args = Array.prototype.slice.call( arguments, 0 );
 
-		else {
-			return iter;
-		}
+			len = args.length;
 
-	}
+			i -= len;
 
-	return iter;
+			fn = rpartial( fn, null, args );
+
+			if ( i <= 0 ) {
+				return fn();
+			}
+
+			else {
+				return iter;
+			}
+
+		};
+
+		return iter.apply( null, arguments );
+
+	};
 
 };
 

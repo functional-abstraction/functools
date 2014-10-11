@@ -1,6 +1,6 @@
 
 
-var rpartial = function ( fn, that, args ) {
+var rpartial = function ( callable, that, args ) {
 
 	var stack;
 
@@ -14,7 +14,7 @@ var rpartial = function ( fn, that, args ) {
 
 		args = [that].concat( args ).concat( stack );
 
-		fn = Function.prototype.bind.apply( fn, args );
+		fn = Function.prototype.bind.apply( callable, args );
 
 		return fn();
 	};
