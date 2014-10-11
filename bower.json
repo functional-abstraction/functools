@@ -3,7 +3,7 @@
 	"name": "aureooms-js-functools",
 	"main": "js/dist/functools.js",
 	"description": "functions code bricks for JavaScript",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"ignore": [
 		"js/index.js",
 		"js/src",
