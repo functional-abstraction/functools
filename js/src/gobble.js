@@ -5,9 +5,9 @@ var gobble = function ( callable, n ) {
 
 		var args;
 
-		args = Array.prototype.slice( arguments, n );
+		args = Array.prototype.slice.call( arguments, n );
 
-		return Function.prototype.apply( callable, this, args );
+		return Function.prototype.apply.call( callable, this, args );
 
 	};
 
