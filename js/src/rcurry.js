@@ -19,7 +19,7 @@ var rcurry = function ( callable, arity ) {
 
 			i -= len;
 
-			fn = rpartial( fn, null, args );
+			fn = rpartial( fn, this, args );
 
 			if ( i <= 0 ) {
 				return fn();
@@ -31,7 +31,7 @@ var rcurry = function ( callable, arity ) {
 
 		};
 
-		return iter.apply( null, arguments );
+		return iter.apply( this, arguments );
 
 	};
 

@@ -51,7 +51,7 @@ var curry = function ( callable, arity ) {
 
 			i -= len;
 
-			fn = partial( fn, null, args );
+			fn = partial( fn, this, args );
 
 			if ( i <= 0 ) {
 				return fn();
@@ -63,13 +63,31 @@ var curry = function ( callable, arity ) {
 
 		};
 
-		return iter.apply( null, arguments );
+		return iter.apply( this, arguments );
 
 	};
 
 };
 
 exports.curry = curry;
+
+/* js/src/gobble.js */
+
+var gobble = function ( callable, n ) {
+
+	return function () {
+
+		var args;
+
+		args = Array.prototype.slice( arguments, n );
+
+		return Function.prototype.apply( callable, this, args );
+
+	};
+
+};
+
+exports.gobble = gobble;
 
 /* js/src/noop.js */
 
@@ -115,7 +133,7 @@ var rcurry = function ( callable, arity ) {
 
 			i -= len;
 
-			fn = rpartial( fn, null, args );
+			fn = rpartial( fn, this, args );
 
 			if ( i <= 0 ) {
 				return fn();
@@ -127,7 +145,7 @@ var rcurry = function ( callable, arity ) {
 
 		};
 
-		return iter.apply( null, arguments );
+		return iter.apply( this, arguments );
 
 	};
 
