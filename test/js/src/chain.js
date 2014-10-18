@@ -13,7 +13,7 @@ var g = function (x) {
 var fg = functools.chain(f, g);
 
 var one = function (x, y) {
-	deepEqual(fg(x), y, util.format("fg( %s ) === %s", x, y))
+	deepEqual( fg( x ), y, util.format("fg( %s ) === %s", x, y) );
 };
 
 test( "chain", function () {
