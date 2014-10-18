@@ -180,4 +180,14 @@ var rpartial = function ( callable, that, args ) {
 
 exports.rpartial = rpartial;
 
+/* js/src/star.js */
+
+var star = function ( fn, args ) {
+
+	return Function.prototype.apply.call( fn, this, args );
+
+};
+
+exports.star = star;
+
 })(typeof exports === 'undefined' ? this['functools'] = {} : exports);
