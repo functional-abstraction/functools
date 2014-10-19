@@ -8,7 +8,7 @@ var f = function ( x, y, z ) {
 var g = functools.curry( f, f.length );
 
 var one = function (x, y, z) {
-	var msg;
+	var msg, h;
 
 	msg = util.format("g( %s, %s, %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
 	deepEqual(g( x, y, z ), f( x, y, z ), msg);
@@ -33,6 +33,32 @@ var one = function (x, y, z) {
 
 	msg = util.format("g()()()( %s, %s )()( %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
 	deepEqual(g()()()( x, y )()( z ), f( x, y, z ), msg);
+
+	h = g();
+
+	msg = util.format("h( %s, %s, %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h( x, y, z ), f( x, y, z ), msg);
+
+	msg = util.format("h( %s )( %s, %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h( x )( y, z ), f( x, y, z ), msg);
+
+	msg = util.format("h( %s )( %s )( %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h( x )( y )( z ), f( x, y, z ), msg);
+
+	msg = util.format("h( %s, %s )( %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h( x, y )( z ), f( x, y, z ), msg);
+
+	msg = util.format("h()()()( %s, %s, %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h()()()( x, y, z ), f( x, y, z ), msg);
+
+	msg = util.format("h()()()( %s )()( %s, %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h()()()( x )()( y, z ), f( x, y, z ), msg);
+
+	msg = util.format("h()()()( %s )()( %s )()( %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h()()()( x )()( y )()( z ), f( x, y, z ), msg);
+
+	msg = util.format("h()()()( %s, %s )()( %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
+	deepEqual(h()()()( x, y )()( z ), f( x, y, z ), msg);
 };
 
 test( "curry", function () {
