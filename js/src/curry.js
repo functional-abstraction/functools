@@ -4,34 +4,21 @@ var curry = function ( callable, arity ) {
 
 	return function () {
 
-		var fn, i;
+		var fn, i, args;
 
-		fn = callable;
-		i = arity;
+		args = Array.prototype.slice.call( arguments, 0 );
 
-		var iter = function () {
+		fn = partial( callable, this, args );
 
-			var len, args;
+		i = arity - args.length;
 
-			args = Array.prototype.slice.call( arguments, 0 );
+		if ( i <= 0 ) {
+			return fn();
+		}
 
-			len = args.length;
-
-			i -= len;
-
-			fn = partial( fn, this, args );
-
-			if ( i <= 0 ) {
-				return fn();
-			}
-
-			else {
-				return iter;
-			}
-
-		};
-
-		return iter.apply( this, arguments );
+		else {
+			return curry( fn, i );
+		}
 
 	};
 
