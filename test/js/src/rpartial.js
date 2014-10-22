@@ -8,9 +8,9 @@ var f = function ( x, y, z ) {
 
 var one = function (x, y, z) {
 	var msg;
-	var g = functools.rpartial( f, null, [z] );
-	var h = functools.rpartial( f, null, [y, z] );
-	var i = functools.rpartial( f, null, [x, y, z] );
+	var g = functools.rpartial( f, [z] );
+	var h = functools.rpartial( f, [y, z] );
+	var i = functools.rpartial( f, [x, y, z] );
 
 	msg = util.format("g( %s, %s ) === f( %s, %s, %s )", x, y, x, y, z)
 	deepEqual(g( x, y ), f( x, y, z ), msg);

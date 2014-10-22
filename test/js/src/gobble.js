@@ -12,8 +12,8 @@ var one = function (trash, x, y, z) {
 	args = trash.concat([x, y, z]);
 	var g = functools.gobble( f, len );
 
-	msg = util.format("g.apply( null, %s ) === f( %s, %s, %s )", JSON.stringify(args), x, y, z)
-	deepEqual(g.apply( null, args ), f( x, y, z ), msg);
+	msg = util.format( "g.apply( null, %s ) === f( %s, %s, %s )", JSON.stringify(args), x, y, z );
+	deepEqual( g.apply( null, args ), f( x, y, z ), msg );
 };
 
 test( "gobble", function () {

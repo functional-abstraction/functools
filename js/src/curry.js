@@ -8,7 +8,7 @@ var curry = function ( callable, arity ) {
 
 		args = Array.prototype.slice.call( arguments, 0 );
 
-		fn = partial( callable, this, args );
+		fn = bind( callable, this, args );
 
 		i = arity - args.length;
 

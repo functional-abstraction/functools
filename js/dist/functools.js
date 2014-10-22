@@ -3,6 +3,29 @@
 	'use strict';
 
 
+/* js/src/apply.js */
+
+
+var apply = function ( fn, that, args ) {
+
+	return Function.prototype.apply.call( fn, that, args );
+
+};
+
+exports.apply = apply;
+
+/* js/src/bind.js */
+
+
+var bind = function ( callable, that, args ) {
+
+	args = [that].concat( args );
+
+	return Function.prototype.bind.apply( callable, args );
+};
+
+exports.bind = bind;
+
 /* js/src/chain.js */
 
 
@@ -29,6 +52,17 @@ var chain = function () {
 
 exports.chain = chain;
 
+/* js/src/create.js */
+
+
+var create = function ( fn ) {
+
+	return new ( Function.prototype.bind.apply( fn, arguments ) );
+
+};
+
+exports.create = create;
+
 /* js/src/curry.js */
 
 
@@ -40,7 +74,7 @@ var curry = function ( callable, arity ) {
 
 		args = Array.prototype.slice.call( arguments, 0 );
 
-		fn = partial( callable, this, args );
+		fn = bind( callable, this, args );
 
 		i = arity - args.length;
 
@@ -59,6 +93,7 @@ var curry = function ( callable, arity ) {
 exports.curry = curry;
 
 /* js/src/gobble.js */
+
 
 var gobble = function ( callable, n ) {
 
@@ -79,7 +114,6 @@ exports.gobble = gobble;
 /* js/src/noop.js */
 
 
-
 var noop = function () {
 	// this block intentionally left empty
 };
@@ -89,48 +123,18 @@ exports.noop = noop;
 /* js/src/partial.js */
 
 
-var partial = function ( callable, that, args ) {
+var partial = function ( callable, args ) {
 
-	args = [that].concat( args );
+	return bind( callable, undefined, args );
 
-	return Function.prototype.bind.apply( callable, args );
 };
 
 exports.partial = partial;
 
-/* js/src/rcurry.js */
+/* js/src/rbind.js */
 
 
-var rcurry = function ( callable, arity ) {
-
-	return function () {
-
-		var fn, i, args;
-
-		args = Array.prototype.slice.call( arguments, 0 );
-
-		fn = rpartial( callable, this, args );
-
-		i = arity - args.length;
-
-		if ( i <= 0 ) {
-			return fn();
-		}
-
-		else {
-			return rcurry( fn, i );
-		}
-
-	};
-
-};
-
-exports.rcurry = rcurry;
-
-/* js/src/rpartial.js */
-
-
-var rpartial = function ( callable, that, args ) {
+var rbind = function ( callable, that, args ) {
 
 	var stack;
 
@@ -152,13 +156,54 @@ var rpartial = function ( callable, that, args ) {
 
 };
 
+exports.rbind = rbind;
+
+/* js/src/rcurry.js */
+
+
+var rcurry = function ( callable, arity ) {
+
+	return function () {
+
+		var fn, i, args;
+
+		args = Array.prototype.slice.call( arguments, 0 );
+
+		fn = rbind( callable, this, args );
+
+		i = arity - args.length;
+
+		if ( i <= 0 ) {
+			return fn();
+		}
+
+		else {
+			return rcurry( fn, i );
+		}
+
+	};
+
+};
+
+exports.rcurry = rcurry;
+
+/* js/src/rpartial.js */
+
+
+var rpartial = function ( callable, args ) {
+
+	return rbind( callable, undefined, args );
+
+};
+
 exports.rpartial = rpartial;
 
 /* js/src/star.js */
 
+
 var star = function ( fn, args ) {
 
-	return Function.prototype.apply.call( fn, this, args );
+	return apply( fn, undefined, args );
 
 };
 

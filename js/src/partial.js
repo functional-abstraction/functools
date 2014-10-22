@@ -1,10 +1,9 @@
 
 
-var partial = function ( callable, that, args ) {
+var partial = function ( callable, args ) {
 
-	args = [that].concat( args );
+	return bind( callable, undefined, args );
 
-	return Function.prototype.bind.apply( callable, args );
 };
 
 exports.partial = partial;

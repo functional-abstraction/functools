@@ -8,7 +8,7 @@ var rcurry = function ( callable, arity ) {
 
 		args = Array.prototype.slice.call( arguments, 0 );
 
-		fn = rpartial( callable, this, args );
+		fn = rbind( callable, this, args );
 
 		i = arity - args.length;
 
