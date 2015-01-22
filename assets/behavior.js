@@ -93,6 +93,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/conjunction.js",
+        "projectPath": "js/src/conjunction.js",
+        "targetPath": "conjunction",
+        "pageTitle": "conjunction",
+        "title": "conjunction"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
         "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/create.js",
         "projectPath": "js/src/create.js",
         "targetPath": "create",
@@ -118,6 +138,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         "targetPath": "curry",
         "pageTitle": "curry",
         "title": "curry"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/disjunction.js",
+        "projectPath": "js/src/disjunction.js",
+        "targetPath": "disjunction",
+        "pageTitle": "disjunction",
+        "title": "disjunction"
       },
       "depth": 1,
       "outline": []
