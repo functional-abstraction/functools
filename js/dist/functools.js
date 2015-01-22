@@ -6,13 +6,13 @@
 /* js/src/apply.js */
 
 
-var apply = function ( fn, that, args ) {
+var apply = function ( fn , that , args ) {
 
-	return Function.prototype.apply.call( fn, that, args );
+	return Function.prototype.apply.call( fn , that , args ) ;
 
-};
+} ;
 
-exports.apply = apply;
+exports.apply = apply ;
 
 /* js/src/bind.js */
 
@@ -29,28 +29,29 @@ exports.bind = bind;
 /* js/src/chain.js */
 
 
-var chain = function () {
+var chain = function ( ) {
 
-	var i, len, args;
+	var i , len , args ;
 
-	args = arguments;
+	args = arguments ;
 
-	len = args.length;
+	len = args.length ;
 
 	return function ( obj ) {
 
-		i = len;
+		i = len ;
 
 		while ( i-- ) {
-			obj = args[i]( obj );
+			obj = args[i]( obj ) ;
 		}
 
-		return obj;
-	};
+		return obj ;
 
-};
+	} ;
 
-exports.chain = chain;
+} ;
+
+exports.chain = chain ;
 
 /* js/src/create.js */
 
@@ -122,13 +123,13 @@ exports.noop = noop;
 /* js/src/partial.js */
 
 
-var partial = function ( callable, args ) {
+var partial = function ( callable , args ) {
 
-	return bind( callable, undefined, args );
+	return bind( callable , undefined , args );
 
-};
+} ;
 
-exports.partial = partial;
+exports.partial = partial ;
 
 /* js/src/rbind.js */
 
@@ -200,12 +201,33 @@ exports.rpartial = rpartial;
 /* js/src/star.js */
 
 
-var star = function ( fn, args ) {
+var star = function ( callable , args ) {
 
-	return apply( fn, undefined, args );
+	return apply( callable , undefined , args ) ;
 
-};
+} ;
 
-exports.star = star;
+exports.star = star ;
+
+/* js/src/starchain.js */
+
+
+var starchain = function ( ) {
+
+	var i , len , args ;
+
+	args = [] ;
+
+	len = arguments.length ;
+
+	for ( i = 0 ; i < len ; ++i ) {
+		args.push( partial( star , [ arguments[i] ] ) ) ;
+	}
+
+	return star( chain , args ) ;
+
+} ;
+
+exports.starchain = starchain ;
 
 })(typeof exports === 'undefined' ? this['functools'] = {} : exports);

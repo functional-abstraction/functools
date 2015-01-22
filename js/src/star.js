@@ -1,9 +1,9 @@
 
 
-var star = function ( fn, args ) {
+var star = function ( callable , args ) {
 
-	return apply( fn, undefined, args );
+	return apply( callable , undefined , args ) ;
 
-};
+} ;
 
-exports.star = star;
+exports.star = star ;

@@ -1,25 +1,25 @@
 
-var util = require("util");
+var util = require( "util" ) ;
 
-var f = function (x) {
-	return x * x;
-};
+var f = function ( x ) {
+	return x * x ;
+} ;
 
 
-var g = function (x) {
-	return x + 1;
-};
+var g = function ( x ) {
+	return x + 1 ;
+} ;
 
-var fg = functools.chain(f, g);
+var fg = functools.chain( f , g ) ;
 
-var one = function (x, y) {
-	deepEqual( fg( x ), y, util.format("fg( %s ) === %s", x, y) );
-};
+var one = function ( x ) {
+	deepEqual( fg( x ) , f( g( x ) ) , util.format("fg( %s ) === f( g( %s ) )" , x , x ) ) ;
+} ;
 
-test( "chain", function () {
+test( "chain" , function ( ) {
 
-	one(0, 1);
-	one(1, 4);
-	one(2, 9);
+	one( 0 ) ;
+	one( 1 ) ;
+	one( 2 ) ;
 
-});
+} ) ;

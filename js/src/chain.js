@@ -1,24 +1,25 @@
 
 
-var chain = function () {
+var chain = function ( ) {
 
-	var i, len, args;
+	var i , len , args ;
 
-	args = arguments;
+	args = arguments ;
 
-	len = args.length;
+	len = args.length ;
 
 	return function ( obj ) {
 
-		i = len;
+		i = len ;
 
 		while ( i-- ) {
-			obj = args[i]( obj );
+			obj = args[i]( obj ) ;
 		}
 
-		return obj;
-	};
+		return obj ;
 
-};
+	} ;
 
-exports.chain = chain;
+} ;
+
+exports.chain = chain ;
