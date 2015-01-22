@@ -53,6 +53,31 @@ var chain = function ( ) {
 
 exports.chain = chain ;
 
+/* js/src/conjunction.js */
+
+
+var conjunction = function ( ) {
+
+	var i , len , args ;
+
+	args = arguments ;
+
+	len = args.length ;
+
+	return function ( obj ) {
+
+		for ( i = 0 ; i < len ; ++i ) {
+			if ( ! args[i]( obj ) ) return false ;
+		}
+
+		return true ;
+
+	} ;
+
+} ;
+
+exports.conjunction = conjunction ;
+
 /* js/src/create.js */
 
 var create = function ( fn ) {
@@ -91,6 +116,31 @@ var curry = function ( callable, arity ) {
 };
 
 exports.curry = curry;
+
+/* js/src/disjunction.js */
+
+
+var disjunction = function ( ) {
+
+	var i , len , args ;
+
+	args = arguments ;
+
+	len = args.length ;
+
+	return function ( obj ) {
+
+		for ( i = 0 ; i < len ; ++i ) {
+			if ( args[i]( obj ) ) return true ;
+		}
+
+		return false ;
+
+	} ;
+
+} ;
+
+exports.disjunction = disjunction ;
 
 /* js/src/gobble.js */
 
