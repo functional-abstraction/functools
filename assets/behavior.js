@@ -13,7 +13,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "commentsOnly": true,
           "name": "Markdown"
         },
-        "sourcePath": "/home/genius/dev/js/js-functools/README.md",
+        "sourcePath": "/home/aureooms/dev/js/js-functools/README.md",
         "projectPath": "README.md",
         "targetPath": "index",
         "pageTitle": "index",
@@ -33,7 +33,47 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-functools/js/src/chain.js",
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/apply.js",
+        "projectPath": "js/src/apply.js",
+        "targetPath": "apply",
+        "pageTitle": "apply",
+        "title": "apply"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/bind.js",
+        "projectPath": "js/src/bind.js",
+        "targetPath": "bind",
+        "pageTitle": "bind",
+        "title": "bind"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/chain.js",
         "projectPath": "js/src/chain.js",
         "targetPath": "chain",
         "pageTitle": "chain",
@@ -53,7 +93,27 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-functools/js/src/curry.js",
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/create.js",
+        "projectPath": "js/src/create.js",
+        "targetPath": "create",
+        "pageTitle": "create",
+        "title": "create"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/curry.js",
         "projectPath": "js/src/curry.js",
         "targetPath": "curry",
         "pageTitle": "curry",
@@ -73,7 +133,27 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-functools/js/src/noop.js",
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/gobble.js",
+        "projectPath": "js/src/gobble.js",
+        "targetPath": "gobble",
+        "pageTitle": "gobble",
+        "title": "gobble"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/noop.js",
         "projectPath": "js/src/noop.js",
         "targetPath": "noop",
         "pageTitle": "noop",
@@ -93,7 +173,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-functools/js/src/partial.js",
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/partial.js",
         "projectPath": "js/src/partial.js",
         "targetPath": "partial",
         "pageTitle": "partial",
@@ -113,7 +193,27 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-functools/js/src/rcurry.js",
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/rbind.js",
+        "projectPath": "js/src/rbind.js",
+        "targetPath": "rbind",
+        "pageTitle": "rbind",
+        "title": "rbind"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/rcurry.js",
         "projectPath": "js/src/rcurry.js",
         "targetPath": "rcurry",
         "pageTitle": "rcurry",
@@ -133,11 +233,31 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-functools/js/src/rpartial.js",
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/rpartial.js",
         "projectPath": "js/src/rpartial.js",
         "targetPath": "rpartial",
         "pageTitle": "rpartial",
         "title": "rpartial"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-functools/js/src/star.js",
+        "projectPath": "js/src/star.js",
+        "targetPath": "star",
+        "pageTitle": "star",
+        "title": "star"
       },
       "depth": 1,
       "outline": []

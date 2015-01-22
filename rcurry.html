@@ -2,34 +2,21 @@
 
 	<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
 
-		<span class="hljs-keyword">var</span> fn, i;
+		<span class="hljs-keyword">var</span> fn, i, args;
 
-		fn = callable;
-		i = arity;
+		args = <span class="hljs-built_in">Array</span>.prototype.slice.call( <span class="hljs-built_in">arguments</span>, <span class="hljs-number">0</span> );
 
-		<span class="hljs-keyword">var</span> iter = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+		fn = rbind( callable, <span class="hljs-keyword">this</span>, args );
 
-			<span class="hljs-keyword">var</span> len, args;
+		i = arity - args.length;
 
-			args = <span class="hljs-built_in">Array</span>.prototype.slice.call( <span class="hljs-built_in">arguments</span>, <span class="hljs-number">0</span> );
+		<span class="hljs-keyword">if</span> ( i &lt;= <span class="hljs-number">0</span> ) {
+			<span class="hljs-keyword">return</span> fn();
+		}
 
-			len = args.length;
-
-			i -= len;
-
-			fn = rpartial( fn, <span class="hljs-literal">null</span>, args );
-
-			<span class="hljs-keyword">if</span> ( i &lt;= <span class="hljs-number">0</span> ) {
-				<span class="hljs-keyword">return</span> fn();
-			}
-
-			<span class="hljs-keyword">else</span> {
-				<span class="hljs-keyword">return</span> iter;
-			}
-
-		};
-
-		<span class="hljs-keyword">return</span> iter.apply( <span class="hljs-literal">null</span>, <span class="hljs-built_in">arguments</span> );
+		<span class="hljs-keyword">else</span> {
+			<span class="hljs-keyword">return</span> rcurry( fn, i );
+		}
 
 	};
 

@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><title>bind</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="bind"><meta name="groc-project-path" content="js/src/bind.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-functools"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-functools/blob/master/js/src/bind.js">js/src/bind.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">var</span> bind = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( callable, that, args )</span> {</span>
+
+	args = [that].concat( args );
+
+	<span class="hljs-keyword">return</span> <span class="hljs-built_in">Function</span>.prototype.bind.apply( callable, args );
+};
+
+exports.bind = bind;</div></div></div></div></body></html>
