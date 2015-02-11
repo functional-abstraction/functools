@@ -1,0 +1,11 @@
+{
+	"name": "aureooms-js-functools",
+	"repo": "aureooms/js-functools",
+	"scripts": [
+		"js/dist/functools.js"
+	],
+	"version": "1.2.0",
+	"description": "functions code bricks for JavaScript",
+	"main": "js/dist/functools.js",
+	"license": "AGPL-3.0"
+}
