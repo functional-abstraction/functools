@@ -4,7 +4,7 @@
 	"scripts": [
 		"js/dist/functools.js"
 	],
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "functions code bricks for JavaScript",
 	"main": "js/dist/functools.js",
 	"license": "AGPL-3.0"
