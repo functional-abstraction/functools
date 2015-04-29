@@ -7,11 +7,15 @@
 	"version": "2.0.2",
 	"keywords": [
 		"bricks",
+		"compose",
+		"curry",
 		"ender",
 		"function",
+		"functools",
 		"functional",
 		"javascript",
-		"js"
+		"js",
+		"partial"
 	],
 	"scripts": {
 		"build": "./node_modules/.bin/aureooms-node-package-build",
