@@ -1,20 +1,12 @@
 
 
-var chain = function ( ) {
+var chain = function ( callables ) {
 
-	var i , len , args ;
-
-	args = arguments ;
-
-	len = args.length ;
+	var len = callables.length ;
 
 	return function ( obj ) {
 
-		i = len ;
-
-		while ( i-- ) {
-			obj = args[i]( obj ) ;
-		}
+		for ( var i = 0 ; i < len ; ++i ) obj = callables[i]( obj ) ;
 
 		return obj ;
 

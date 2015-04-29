@@ -1,6 +1,6 @@
 
 
-var starchain = function ( callables ) {
+var starcompose = function ( callables ) {
 
 	var i , len , args ;
 
@@ -12,8 +12,8 @@ var starchain = function ( callables ) {
 		args.push( partial( star , [ callables[i] ] ) ) ;
 	}
 
-	return chain( args ) ;
+	return compose( args ) ;
 
 } ;
 
-exports.starchain = starchain ;
+exports.starcompose = starcompose ;

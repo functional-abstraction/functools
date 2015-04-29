@@ -10,7 +10,7 @@ var g = function ( x , y ) {
 	return [ x + 1 , 2 * y - x ] ;
 } ;
 
-var fg = functools.starchain( [ g , f ] ) ;
+var fg = functools.starcompose( [ f , g ] ) ;
 
 var one = function ( x , y ) {
 
@@ -23,7 +23,7 @@ var one = function ( x , y ) {
 	) ;
 } ;
 
-test( "starchain" , function ( ) {
+test( "starcompose" , function ( ) {
 
 	one( 0 , 178 ) ;
 	one( 1 , 237 ) ;

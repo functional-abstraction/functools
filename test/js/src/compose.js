@@ -10,13 +10,13 @@ var g = function ( x ) {
 	return x + 1 ;
 } ;
 
-var fg = functools.chain( [ g , f ] ) ;
+var fg = functools.compose( [ f , g ] ) ;
 
 var one = function ( x ) {
 	deepEqual( fg( x ) , f( g( x ) ) , util.format("fg( %s ) === f( g( %s ) )" , x , x ) ) ;
 } ;
 
-test( "chain" , function ( ) {
+test( "compose" , function ( ) {
 
 	one( 0 ) ;
 	one( 1 ) ;

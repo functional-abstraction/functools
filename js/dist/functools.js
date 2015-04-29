@@ -29,21 +29,13 @@ exports.bind = bind;
 /* js/src/chain.js */
 
 
-var chain = function ( ) {
+var chain = function ( callables ) {
 
-	var i , len , args ;
-
-	args = arguments ;
-
-	len = args.length ;
+	var len = callables.length ;
 
 	return function ( obj ) {
 
-		i = len ;
-
-		while ( i-- ) {
-			obj = args[i]( obj ) ;
-		}
+		for ( var i = 0 ; i < len ; ++i ) obj = callables[i]( obj ) ;
 
 		return obj ;
 
@@ -53,30 +45,26 @@ var chain = function ( ) {
 
 exports.chain = chain ;
 
-/* js/src/conjunction.js */
+/* js/src/compose.js */
 
 
-var conjunction = function ( ) {
+var compose = function ( callables ) {
 
-	var i , len , args ;
-
-	args = arguments ;
-
-	len = args.length ;
+	var len = callables.length ;
 
 	return function ( obj ) {
 
-		for ( i = 0 ; i < len ; ++i ) {
-			if ( ! args[i]( obj ) ) return false ;
-		}
+		var i = len ;
 
-		return true ;
+		while ( i-- ) obj = callables[i]( obj ) ;
+
+		return obj ;
 
 	} ;
 
 } ;
 
-exports.conjunction = conjunction ;
+exports.compose = compose ;
 
 /* js/src/create.js */
 
@@ -116,31 +104,6 @@ var curry = function ( callable, arity ) {
 };
 
 exports.curry = curry;
-
-/* js/src/disjunction.js */
-
-
-var disjunction = function ( ) {
-
-	var i , len , args ;
-
-	args = arguments ;
-
-	len = args.length ;
-
-	return function ( obj ) {
-
-		for ( i = 0 ; i < len ; ++i ) {
-			if ( args[i]( obj ) ) return true ;
-		}
-
-		return false ;
-
-	} ;
-
-} ;
-
-exports.disjunction = disjunction ;
 
 /* js/src/gobble.js */
 
@@ -262,22 +225,43 @@ exports.star = star ;
 /* js/src/starchain.js */
 
 
-var starchain = function ( ) {
+var starchain = function ( callables ) {
 
 	var i , len , args ;
 
 	args = [] ;
 
-	len = arguments.length ;
+	len = callables.length ;
 
 	for ( i = 0 ; i < len ; ++i ) {
-		args.push( partial( star , [ arguments[i] ] ) ) ;
+		args.push( partial( star , [ callables[i] ] ) ) ;
 	}
 
-	return star( chain , args ) ;
+	return chain( args ) ;
 
 } ;
 
 exports.starchain = starchain ;
+
+/* js/src/starcompose.js */
+
+
+var starcompose = function ( callables ) {
+
+	var i , len , args ;
+
+	args = [] ;
+
+	len = callables.length ;
+
+	for ( i = 0 ; i < len ; ++i ) {
+		args.push( partial( star , [ callables[i] ] ) ) ;
+	}
+
+	return compose( args ) ;
+
+} ;
+
+exports.starcompose = starcompose ;
 
 })(typeof exports === 'undefined' ? this['functools'] = {} : exports);
