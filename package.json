@@ -7,6 +7,7 @@
 	"version": "2.0.0",
 	"keywords": [
 		"bricks",
+		"ender",
 		"function",
 		"functional",
 		"javascript",
@@ -28,5 +29,8 @@
 		"type": "git"
 	},
 	"author": "aureooms",
-	"name": "aureooms-js-functools"
+	"name": "aureooms-js-functools",
+	"spm": {
+		"main": "js/dist/functools.js"
+	}
 }
