@@ -1,7 +1,7 @@
 [js-functools](http://aureooms.github.io/js-functools)
 ==
 
-Function tools for JavaScript.
+Function tools for JavaScript. Parent is [aureooms/js-library](https://github.com/aureooms/js-library).
 
 ```js
 let j = ( a , b , c , x ) => a * x**2 + b * x + c ;
