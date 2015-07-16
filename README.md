@@ -105,7 +105,7 @@ require( [ "aureooms-js-functools" ] , function ( functools ) { ... } ) ;
 ```js
 let f = x => x + 1 ;
 let g = x => 2 * x ;
-let odd = compose( f , g ) ;
+let odd = compose( [ f , g ] ) ;
 odd( 7 ) ; // 2 * 7 + 1 = 15
 
 let j = ( a , b , c , x ) => a * x**2 + b * x + c ;
