@@ -33,7 +33,7 @@
 		"type": "git"
 	},
 	"author": "aureooms",
-	"name": "aureooms-js-functools",
+	"name": "@aureooms/js-functools",
 	"spm": {
 		"main": "js/dist/functools.js"
 	}
