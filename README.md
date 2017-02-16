@@ -9,15 +9,15 @@ let p = partial( j , [ 5 , 4 , -1 ] ) ;
 p( -1 ) ; // 5 - 4 - 1 = 0
 ```
 
-[![NPM license](http://img.shields.io/npm/l/aureooms-js-functools.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-functools/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/aureooms-js-functools.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-functools)
-[![Bower version](http://img.shields.io/bower/v/aureooms-js-functools.svg?style=flat)](http://bower.io/search/?q=aureooms-js-functools)
+[![NPM license](http://img.shields.io/npm/l/@aureooms/js-functools.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-functools/master/LICENSE)
+[![NPM version](http://img.shields.io/npm/v/@aureooms/js-functools.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-functools)
+[![Bower version](http://img.shields.io/bower/v/@aureooms/js-functools.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-functools)
 [![Build Status](http://img.shields.io/travis/aureooms/js-functools.svg?style=flat)](https://travis-ci.org/aureooms/js-functools)
 [![Coverage Status](http://img.shields.io/coveralls/aureooms/js-functools.svg?style=flat)](https://coveralls.io/r/aureooms/js-functools)
 [![Dependencies Status](http://img.shields.io/david/aureooms/js-functools.svg?style=flat)](https://david-dm.org/aureooms/js-functools#info=dependencies)
 [![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-functools.svg?style=flat)](https://david-dm.org/aureooms/js-functools#info=devDependencies)
 [![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-functools.svg?style=flat)](https://codeclimate.com/github/aureooms/js-functools)
-[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-functools.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-functools)
+[![NPM downloads per month](http://img.shields.io/npm/dm/@aureooms/js-functools.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-functools)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-functools.svg?style=flat)](https://github.com/aureooms/js-functools/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-functools.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-functools)
 
@@ -36,7 +36,7 @@ and [npm](https://github.com/npm/npm).
 ```terminal
 jspm install github:aureooms/js-functools
 # or
-jspm install npm:aureooms-js-functools
+jspm install npm:@aureooms/js-functools
 ```
 ### duo
 No install step needed for duo!
@@ -48,27 +48,27 @@ component install aureooms/js-functools
 
 ### bower
 ```terminal
-bower install aureooms-js-functools
+bower install @aureooms/js-functools
 ```
 
 ### ender
 ```terminal
-ender add aureooms-js-functools
+ender add @aureooms/js-functools
 ```
 
 ### jam
 ```terminal
-jam install aureooms-js-functools
+jam install @aureooms/js-functools
 ```
 
 ### spm
 ```terminal
-spm install aureooms-js-functools --save
+spm install @aureooms/js-functools --save
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-functools --save
+npm install @aureooms/js-functools --save
 ```
 
 ## Require
@@ -76,7 +76,7 @@ npm install aureooms-js-functools --save
 ```js
 let functools = require( "github:aureooms/js-functools" ) ;
 // or
-import functools from 'aureooms-js-functools' ;
+import functools from '@aureooms/js-functools' ;
 ```
 ### duo
 ```js
@@ -85,19 +85,19 @@ let functools = require( "aureooms/js-functools" ) ;
 
 ### component, ender, spm, npm
 ```js
-let functools = require( "aureooms-js-functools" ) ;
+let functools = require( "@aureooms/js-functools" ) ;
 ```
 
 ### bower
 The script tag exposes the global variable `functools`.
 ```html
-<script src="bower_components/aureooms-js-functools/js/dist/functools.min.js"></script>
+<script src="bower_components/@aureooms/js-functools/js/dist/functools.min.js"></script>
 ```
 Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/).
 
 ### jam
 ```js
-require( [ "aureooms-js-functools" ] , function ( functools ) { ... } ) ;
+require( [ "@aureooms/js-functools" ] , function ( functools ) { ... } ) ;
 ```
 
 ## Use
