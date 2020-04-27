@@ -1,6 +1,6 @@
 
 
-var compose = function ( callables ) {
+export default function compose ( callables ) {
 
 	var len = callables.length ;
 
@@ -14,6 +14,5 @@ var compose = function ( callables ) {
 
 	} ;
 
-} ;
+}
 
-exports.compose = compose ;

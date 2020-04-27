@@ -1,6 +1,6 @@
 
 
-var curry = function ( callable, arity ) {
+export default function curry ( callable, arity ) {
 
 	return function () {
 
@@ -22,6 +22,5 @@ var curry = function ( callable, arity ) {
 
 	};
 
-};
+}
 
-exports.curry = curry;

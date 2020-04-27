@@ -1,6 +1,6 @@
 
 
-var rbind = function ( callable, that, args ) {
+export default function rbind ( callable, that, args ) {
 
 	var stack;
 
@@ -20,6 +20,5 @@ var rbind = function ( callable, that, args ) {
 	};
 
 
-};
+}
 
-exports.rbind = rbind;

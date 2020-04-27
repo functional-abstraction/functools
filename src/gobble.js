@@ -1,6 +1,6 @@
 
 
-var gobble = function ( callable, n ) {
+export default function gobble ( callable, n ) {
 
 	return function () {
 
@@ -12,6 +12,5 @@ var gobble = function ( callable, n ) {
 
 	};
 
-};
+}
 
-exports.gobble = gobble;

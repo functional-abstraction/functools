@@ -1,7 +1,6 @@
 
 
-var noop = function () {
+export default function noop () {
 	// this block intentionally left empty
-};
+}
 
-exports.noop = noop;

@@ -1,6 +1,6 @@
 
 
-var chain = function ( callables ) {
+export default function chain ( callables ) {
 
 	var len = callables.length ;
 
@@ -12,6 +12,5 @@ var chain = function ( callables ) {
 
 	} ;
 
-} ;
+}
 
-exports.chain = chain ;

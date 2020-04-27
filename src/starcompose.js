@@ -1,6 +1,6 @@
 
 
-var starcompose = function ( callables ) {
+export default function starcompose ( callables ) {
 
 	var i , len , args ;
 
@@ -14,6 +14,5 @@ var starcompose = function ( callables ) {
 
 	return compose( args ) ;
 
-} ;
+}
 
-exports.starcompose = starcompose ;

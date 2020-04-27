@@ -1,9 +1,8 @@
 
 
-var star = function ( callable , args ) {
+export default function star ( callable , args ) {
 
 	return apply( callable , undefined , args ) ;
 
-} ;
+}
 
-exports.star = star ;

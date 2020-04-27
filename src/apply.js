@@ -1,9 +1,8 @@
 
 
-var apply = function ( fn , that , args ) {
+export default function apply ( fn , that , args ) {
 
 	return Function.prototype.apply.call( fn , that , args ) ;
 
-} ;
+}
 
-exports.apply = apply ;

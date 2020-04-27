@@ -1,6 +1,6 @@
 
 
-var rcurry = function ( callable, arity ) {
+export default function rcurry ( callable, arity ) {
 
 	return function () {
 
@@ -22,6 +22,5 @@ var rcurry = function ( callable, arity ) {
 
 	};
 
-};
+}
 
-exports.rcurry = rcurry;

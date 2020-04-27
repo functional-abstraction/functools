@@ -1,9 +1,8 @@
 
 
-var partial = function ( callable , args ) {
+export default function partial ( callable , args ) {
 
 	return bind( callable , undefined , args );
 
-} ;
+}
 
-exports.partial = partial ;

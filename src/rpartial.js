@@ -1,9 +1,8 @@
 
 
-var rpartial = function ( callable, args ) {
+export default function rpartial ( callable, args ) {
 
 	return rbind( callable, undefined, args );
 
-};
+}
 
-exports.rpartial = rpartial;

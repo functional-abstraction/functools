@@ -1,6 +1,6 @@
 
 
-var starchain = function ( callables ) {
+export default function starchain ( callables ) {
 
 	var i , len , args ;
 
@@ -14,6 +14,5 @@ var starchain = function ( callables ) {
 
 	return chain( args ) ;
 
-} ;
+}
 
-exports.starchain = starchain ;
