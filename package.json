@@ -50,5 +50,18 @@
   "name": "@aureooms/js-functools",
   "spm": {
     "main": "js/dist/functools.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-async-generator-functions"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
   }
 }
