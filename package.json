@@ -18,7 +18,7 @@
     "partial"
   ],
   "scripts": {
-    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "build": "rm -rf lib && babel src -d lib",
     "test": "ava",
     "esdoc": "esdoc"
   },
@@ -39,7 +39,7 @@
     "nyc": "15.0.1"
   },
   "license": "AGPL-3.0",
-  "main": "js/dist/functools.js",
+  "main": "lib/index.js",
   "description": "functions code bricks for JavaScript",
   "repository": {
     "url": "https://github.com/aureooms/js-functools.git",
