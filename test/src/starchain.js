@@ -1,5 +1,7 @@
+import test from 'ava';
+import * as functools from '../../src';
 
-var util = require( "util" ) ;
+import util from "util" ;
 
 var f = function ( x , y ) {
 	return [ x * x * y , x * y * y ] ;
@@ -14,7 +16,7 @@ var fg = functools.starchain( [ g , f ] ) ;
 
 var one = function ( x , y ) {
 
-	deepEqual(
+	t.deepEqual(
 		fg( [ x , y ] ) , functools.star( f , functools.star( g , [ x , y ] ) ) ,
 		util.format(
 			"fg( %s , %s ) === f( g( %s , %s ) )" ,
@@ -23,7 +25,7 @@ var one = function ( x , y ) {
 	) ;
 } ;
 
-test( "starchain" , function ( ) {
+test( "starchain" , t => {
 
 	one( 0 , 178 ) ;
 	one( 1 , 237 ) ;

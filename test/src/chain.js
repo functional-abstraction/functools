@@ -1,5 +1,7 @@
+import test from 'ava';
+import * as functools from '../../src';
 
-var util = require( "util" ) ;
+import util from "util" ;
 
 var f = function ( x ) {
 	return x * x ;
@@ -13,10 +15,10 @@ var g = function ( x ) {
 var fg = functools.chain( [ g , f ] ) ;
 
 var one = function ( x ) {
-	deepEqual( fg( x ) , f( g( x ) ) , util.format("fg( %s ) === f( g( %s ) )" , x , x ) ) ;
+	t.deepEqual( fg( x ) , f( g( x ) ) , util.format("fg( %s ) === f( g( %s ) )" , x , x ) ) ;
 } ;
 
-test( "chain" , function ( ) {
+test( "chain" , t => {
 
 	one( 0 ) ;
 	one( 1 ) ;

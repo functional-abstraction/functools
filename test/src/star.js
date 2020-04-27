@@ -1,18 +1,19 @@
+import test from 'ava';
+import * as functools from '../../src';
 
-var f, one;
 
-f = function ( x, y, z ) {
+function f ( x, y, z ) {
 	return x + 2*y + 3*z;
 };
 
 
-one = function ( x, y, z ) {
+function one ( x, y, z ) {
 
-	deepEqual( functools.star( f, [x, y, z] ), f( x, y, z ), [x, y, z] );
+	t.deepEqual( functools.star( f, [x, y, z] ), f( x, y, z ), [x, y, z] );
 
 };
 
-test( "star", function () {
+test( "star", t => {
 
 	var i, n;
 

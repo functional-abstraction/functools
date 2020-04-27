@@ -1,15 +1,16 @@
+import test from 'ava';
+import * as functools from '../../src';
 
-var one, F, f, g, util;
 
-util = require("util");
+import util from "util" ;
 
-F = function ( x, y, z ) {
+function F ( x, y, z ) {
 	this.x = x;
 	this.y = y;
 	this.z = z;
 };
 
-F.prototype.mul = function () {
+function F.prototype.mul () {
 	return this.x * this.y * this.z;
 };
 
@@ -17,18 +18,18 @@ f = functools.partial( functools.create, [F] );
 
 g = functools.curry( f, 3 );
 
-one = function ( x, y, z ) {
+function one ( x, y, z ) {
 
 	var multiplier1, multiplier2;
 
 	multiplier1 = new F( x, y, z );
 	multiplier2 = g( x, y, z );
 
-	deepEqual( multiplier2.mul(), multiplier1.mul(), [x, y, z] );
+	t.deepEqual( multiplier2.mul(), multiplier1.mul(), [x, y, z] );
 
 };
 
-test( "curry", function () {
+test( "curry", t => {
 
 	one( 0, 0, 0 );
 	one( 1, 0, 20 );

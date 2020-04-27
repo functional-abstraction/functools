@@ -1,5 +1,7 @@
+import test from 'ava';
+import * as functools from '../../src';
 
-var util = require("util");
+import util from "util" ;
 
 var f = function ( x, y, z ) {
 	return 2 * x + y - z;
@@ -13,16 +15,16 @@ var one = function (x, y, z) {
 	var i = functools.partial( f, [x, y, z] );
 
 	msg = util.format("g( %s, %s ) === f( %s, %s, %s )", y, z, x, y, z)
-	deepEqual(g( y, z ), f( x, y, z ), msg);
+	t.deepEqual(g( y, z ), f( x, y, z ), msg);
 
 	msg = util.format("h( %s ) === f( %s, %s, %s )", z, x, y, z)
-	deepEqual(h( z ), f( x, y, z ), msg);
+	t.deepEqual(h( z ), f( x, y, z ), msg);
 
 	msg = util.format("i() === f( %s, %s, %s )", x, y, z)
-	deepEqual(i(), f( x, y, z ), msg);
+	t.deepEqual(i(), f( x, y, z ), msg);
 };
 
-test( "partial", function () {
+test( "partial", t => {
 
 	one(0, 0, 0);
 	one(1, 0, 0);

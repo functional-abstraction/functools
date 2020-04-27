@@ -1,5 +1,7 @@
+import test from 'ava';
+import * as functools from '../../src';
 
-var util = require("util");
+import util from "util" ;
 
 var f = function ( x, y, z ) {
 	return 2 * x + y - z;
@@ -13,10 +15,10 @@ var one = function (trash, x, y, z) {
 	var g = functools.gobble( f, len );
 
 	msg = util.format( "g.apply( null, %s ) === f( %s, %s, %s )", JSON.stringify(args), x, y, z );
-	deepEqual( g.apply( null, args ), f( x, y, z ), msg );
+	t.deepEqual( g.apply( null, args ), f( x, y, z ), msg );
 };
 
-test( "gobble", function () {
+test( "gobble", t => {
 
 	one( [], 0, 0, 0 );
 	one( [], 1, 0, 0 );
