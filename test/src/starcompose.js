@@ -14,7 +14,7 @@ var g = function ( x , y ) {
 
 var fg = functools.starcompose( [ f , g ] ) ;
 
-var one = function ( x , y ) {
+var one = function ( t , x , y ) {
 
 	t.deepEqual(
 		fg( [ x , y ] ) , functools.star( f , functools.star( g , [ x , y ] ) ) ,
@@ -27,8 +27,8 @@ var one = function ( x , y ) {
 
 test( "starcompose" , t => {
 
-	one( 0 , 178 ) ;
-	one( 1 , 237 ) ;
-	one( 2 , -89 ) ;
+	one( t , 0 , 178 ) ;
+	one( t , 1 , 237 ) ;
+	one( t , 2 , -89 ) ;
 
 } ) ;

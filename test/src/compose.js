@@ -14,14 +14,14 @@ var g = function ( x ) {
 
 var fg = functools.compose( [ f , g ] ) ;
 
-var one = function ( x ) {
+var one = function ( t , x ) {
 	t.deepEqual( fg( x ) , f( g( x ) ) , util.format("fg( %s ) === f( g( %s ) )" , x , x ) ) ;
 } ;
 
 test( "compose" , t => {
 
-	one( 0 ) ;
-	one( 1 ) ;
-	one( 2 ) ;
+	one( t, 0 ) ;
+	one( t, 1 ) ;
+	one( t, 2 ) ;
 
 } ) ;

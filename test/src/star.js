@@ -7,9 +7,9 @@ function f ( x, y, z ) {
 };
 
 
-function one ( x, y, z ) {
+function one ( t , x, y, z ) {
 
-	t.deepEqual( functools.star( f, [x, y, z] ), f( x, y, z ), [x, y, z] );
+	t.deepEqual( functools.star( f, [x, y, z] ), f( x, y, z ), JSON.stringify([x, y, z]) );
 
 };
 
@@ -21,7 +21,7 @@ test( "star", t => {
 	i = n;
 
 	while ( i-- ) {
-		one( Math.random(), Math.random(), Math.random() );
+		one( t , Math.random(), Math.random(), Math.random() );
 	}
 
 });

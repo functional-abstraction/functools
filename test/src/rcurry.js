@@ -9,7 +9,7 @@ var f = function ( x, y, z ) {
 
 var g = functools.rcurry( f, f.length );
 
-var one = function (x, y, z) {
+var one = function (t, x, y, z) {
 	var msg, h;
 
 	msg = util.format("g( %s, %s, %s ) === f( %s, %s, %s )", x, y, z, x, y, z);
@@ -65,11 +65,11 @@ var one = function (x, y, z) {
 
 test( "rcurry", t => {
 
-	one(0, 0, 0);
-	one(1, 0, 0);
-	one(0, 1, 0);
-	one(0, 0, 1);
-	one(0, 3, 40);
-	one(13, 41, 97);
+	one(t, 0, 0, 0);
+	one(t, 1, 0, 0);
+	one(t, 0, 1, 0);
+	one(t, 0, 0, 1);
+	one(t, 0, 3, 40);
+	one(t, 13, 41, 97);
 
 });

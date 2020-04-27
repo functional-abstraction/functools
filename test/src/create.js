@@ -10,32 +10,32 @@ function F ( x, y, z ) {
 	this.z = z;
 };
 
-function F.prototype.mul () {
+F.prototype.mul = function () {
 	return this.x * this.y * this.z;
 };
 
-f = functools.partial( functools.create, [F] );
+const f = functools.partial( functools.create, [F] );
 
-g = functools.curry( f, 3 );
+const g = functools.curry( f, 3 );
 
-function one ( x, y, z ) {
+function one ( t, x, y, z ) {
 
 	var multiplier1, multiplier2;
 
 	multiplier1 = new F( x, y, z );
 	multiplier2 = g( x, y, z );
 
-	t.deepEqual( multiplier2.mul(), multiplier1.mul(), [x, y, z] );
+	t.deepEqual( multiplier2.mul(), multiplier1.mul(), JSON.stringify([x, y, z]) );
 
 };
 
 test( "curry", t => {
 
-	one( 0, 0, 0 );
-	one( 1, 0, 20 );
-	one( 9, 1, 2 );
-	one( 1, -3990, 11 );
-	one( 44, 3, 40 );
-	one( -13, 41, -97 );
+	one( t, 0, 0, 0 );
+	one( t, 1, 0, 20 );
+	one( t, 9, 1, 2 );
+	one( t, 1, -3990, 11 );
+	one( t, 44, 3, 40 );
+	one( t, -13, 41, -97 );
 
 });

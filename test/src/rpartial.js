@@ -8,7 +8,7 @@ var f = function ( x, y, z ) {
 };
 
 
-var one = function (x, y, z) {
+var one = function (t, x, y, z) {
 	var msg;
 	var g = functools.rpartial( f, [z] );
 	var h = functools.rpartial( f, [y, z] );
@@ -26,11 +26,11 @@ var one = function (x, y, z) {
 
 test( "rpartial", t => {
 
-	one(0, 0, 0);
-	one(1, 0, 0);
-	one(0, 1, 0);
-	one(0, 0, 1);
-	one(0, 3, 40);
-	one(13, 41, 97);
+	one(t, 0, 0, 0);
+	one(t, 1, 0, 0);
+	one(t, 0, 1, 0);
+	one(t, 0, 0, 1);
+	one(t, 0, 3, 40);
+	one(t, 13, 41, 97);
 
 });
