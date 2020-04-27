@@ -1,4 +1,4 @@
-
+import apply from './apply' ;
 
 export default function star ( callable , args ) {
 

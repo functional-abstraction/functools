@@ -1,16 +1,14 @@
-
+import bind from './bind' ;
 
 export default function curry ( callable, arity ) {
 
 	return function () {
 
-		var fn, i, args;
+		const args = Array.prototype.slice.call( arguments, 0 );
 
-		args = Array.prototype.slice.call( arguments, 0 );
+		const fn = bind( callable, this, args );
 
-		fn = bind( callable, this, args );
-
-		i = arity - args.length;
+		const i = arity - args.length;
 
 		if ( i <= 0 ) {
 			return fn();
@@ -23,4 +21,3 @@ export default function curry ( callable, arity ) {
 	};
 
 }
-

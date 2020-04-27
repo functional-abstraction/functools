@@ -1,14 +1,14 @@
-
+import star from './star' ;
+import compose from './compose' ;
+import partial from './partial' ;
 
 export default function starcompose ( callables ) {
 
-	var i , len , args ;
+	const args = [] ;
 
-	args = [] ;
+	const len = callables.length ;
 
-	len = callables.length ;
-
-	for ( i = 0 ; i < len ; ++i ) {
+	for ( let i = 0 ; i < len ; ++i ) {
 		args.push( partial( star , [ callables[i] ] ) ) ;
 	}
 

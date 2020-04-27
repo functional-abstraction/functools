@@ -2,11 +2,11 @@
 
 export default function compose ( callables ) {
 
-	var len = callables.length ;
+	const len = callables.length ;
 
 	return function ( obj ) {
 
-		var i = len ;
+		let i = len ;
 
 		while ( i-- ) obj = callables[i]( obj ) ;
 
@@ -15,4 +15,3 @@ export default function compose ( callables ) {
 	} ;
 
 }
-
