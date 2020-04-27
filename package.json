@@ -1,30 +1,35 @@
 {
+  "name": "@aureooms/js-functools",
+  "description": "functions code bricks for JavaScript",
+  "version": "2.0.3",
+  "author": "aureooms",
+  "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
+    "require": [
+      "@babel/polyfill",
+      "@babel/register"
+    ],
+    "timeout": "1m"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-async-generator-functions"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
   "bugs": {
     "url": "https://github.com/aureooms/js-functools/issues"
   },
   "dependencies": {},
-  "homepage": "http://aureooms.github.io/js-functools/",
-  "version": "2.0.3",
-  "keywords": [
-    "bricks",
-    "compose",
-    "curry",
-    "ender",
-    "function",
-    "functools",
-    "functional",
-    "javascript",
-    "js",
-    "partial"
-  ],
-  "scripts": {
-    "build": "rm -rf lib && babel src -d lib",
-    "test": "ava",
-    "esdoc": "esdoc",
-    "prepare": "npm run build",
-    "cover": "nyc --reporter=lcov npm test",
-    "release": "np"
-  },
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
@@ -40,39 +45,34 @@
     "np": "6.2.2",
     "nyc": "15.0.1"
   },
+  "files": [
+    "lib"
+  ],
+  "homepage": "http://aureooms.github.io/js-functools/",
+  "keywords": [
+    "bricks",
+    "compose",
+    "curry",
+    "ender",
+    "function",
+    "functional",
+    "functools",
+    "javascript",
+    "js",
+    "partial"
+  ],
   "license": "AGPL-3.0",
   "main": "lib/index.js",
-  "description": "functions code bricks for JavaScript",
   "repository": {
     "url": "https://github.com/aureooms/js-functools.git",
     "type": "git"
   },
-  "author": "aureooms",
-  "name": "@aureooms/js-functools",
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-async-generator-functions"
-    ],
-    "env": {
-      "development": {
-        "sourceMaps": "inline"
-      }
-    }
-  },
-  "ava": {
-    "files": [
-      "test/src/**/*"
-    ],
-    "require": [
-      "@babel/polyfill",
-      "@babel/register"
-    ],
-    "timeout": "1m"
-  },
-  "files": [
-    "lib"
-  ]
+  "scripts": {
+    "build": "rm -rf lib && babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "esdoc": "esdoc",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava"
+  }
 }
