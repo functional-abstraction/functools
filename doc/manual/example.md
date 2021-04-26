@@ -1,6 +1,6 @@
 # Examples
 
-> More examples in [the test files](https://github.com/aureooms/js-functools/tree/master/test/src).
+> More examples in [the test files](https://github.com/make-github-pseudonymous-again/js-functools/tree/master/test/src).
 
 ```js
 let f = x => x + 1 ;
