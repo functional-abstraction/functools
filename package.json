@@ -49,7 +49,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "http://functional-abstraction.github.io/functools",
+  "homepage": "https://functional-abstraction.github.io/functools",
   "keywords": [
     "bricks",
     "compose",
