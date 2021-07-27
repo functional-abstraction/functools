@@ -97,6 +97,7 @@
       "@babel/plugin-proposal-async-generator-functions"
     ],
     "env": {
+      "cover": {},
       "development": {
         "sourceMaps": "inline"
       }
