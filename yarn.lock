@@ -3020,17 +3020,6 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-coveralls@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/coveralls/-/coveralls-3.1.1.tgz#f5d4431d8b5ae69c5079c8f8ca00d64ac77cf081"
-  integrity sha512-+dxnG2NHncSD1NrqbSM3dn/lE57O6Qf/koe9+I7c+wzkqRmEvcp0kgJdxKInzYzkICKkFMZsX3Vct3++tsF9ww==
-  dependencies:
-    js-yaml "^3.13.1"
-    lcov-parse "^1.0.0"
-    log-driver "^1.2.7"
-    minimist "^1.2.5"
-    request "^2.88.2"
-
 cross-spawn@^7.0.0:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.2.tgz#d0d7dcfa74e89115c7619f4f721a94e1fdb716d6"
@@ -5857,11 +5846,6 @@ latest-version@^5.1.0:
   dependencies:
     package-json "^6.3.0"
 
-lcov-parse@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/lcov-parse/-/lcov-parse-1.0.0.tgz#eb0d46b54111ebc561acb4c408ef9363bdc8f7e0"
-  integrity sha1-6w1GtUER68VhrLTECO+TY73I9+A=
-
 levn@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/levn/-/levn-0.4.1.tgz#ae4562c007473b932a6200d403268dd2fffc6ade"
@@ -6167,11 +6151,6 @@ lodash@^4.17.20:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
-
-log-driver@^1.2.7:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/log-driver/-/log-driver-1.2.7.tgz#63b95021f0702fedfa2c9bb0a24e7797d71871d8"
-  integrity sha512-U7KCmLdqsGHBLeWqYlFA0V0Sl6P08EE1ZrmA9cxjUE0WVqT9qnyVDPz1kzpFEP0jdJuFnasWIfSd7fsaNXkpbg==
 
 log-symbols@^1.0.2:
   version "1.0.2"
@@ -8073,7 +8052,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@^2.55.0, request@^2.88.2:
+request@^2.55.0:
   version "2.88.2"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
