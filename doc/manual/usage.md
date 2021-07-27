@@ -5,14 +5,14 @@
 
 First, require the polyfill at the entry point of your application
 ```js
-require( 'regenerator-runtime/runtime' ) ;
+await import( 'regenerator-runtime/runtime.js' ) ;
 // or
 import 'regenerator-runtime/runtime.js' ;
 ```
 
 Then, import the library where needed
 ```js
-const functools = require( '@functional-abstraction/functools' ) ;
+const functools = await import( '@functional-abstraction/functools' ) ;
 // or
 import * as functools from '@functional-abstraction/functools' ;
 ```
