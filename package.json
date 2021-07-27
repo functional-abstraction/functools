@@ -1,6 +1,6 @@
 {
   "name": "@functional-abstraction/functools",
-  "description": "functions code bricks for JavaScript",
+  "description": "Function tools for JavaScript",
   "version": "3.0.1",
   "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
