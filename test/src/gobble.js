@@ -1,47 +1,39 @@
 import test from 'ava';
 import * as functools from '../../src/index.js';
 
-import util from "util" ;
+const f = (x, y, z) => 2 * x + y - z;
 
-var f = function ( x, y, z ) {
-	return 2 * x + y - z;
+const macro = (t, trash, x, y, z) => {
+	const len = trash.length;
+	const args = trash.concat([x, y, z]);
+	const g = functools.gobble(f, len);
+
+	t.deepEqual(g(...args), f(x, y, z));
 };
 
+macro.title = (title, trash, x, y, z) =>
+	title ??
+	`gobble(${f.name}, ${trash.length})(...${JSON.stringify(
+		trash.concat([x, y, z]),
+	)}) === f(${x}, ${y}, ${z})`;
 
-var one = function (t, trash, x, y, z) {
-	var msg, len, args;
-	len = trash.length;
-	args = trash.concat([x, y, z]);
-	var g = functools.gobble( f, len );
+test(macro, [], 0, 0, 0);
+test(macro, [], 1, 0, 0);
+test(macro, [], 0, 1, 0);
+test(macro, [], 0, 0, 1);
+test(macro, [], 0, 3, 40);
+test(macro, [], 13, 41, 97);
 
-	msg = util.format( "g.apply( null, %s ) === f( %s, %s, %s )", JSON.stringify(args), x, y, z );
-	t.deepEqual( g.apply( null, args ), f( x, y, z ), msg );
-};
+test(macro, [-1], 0, 0, 0);
+test(macro, [-1], 1, 0, 0);
+test(macro, [-1], 0, 1, 0);
+test(macro, [-1], 0, 0, 1);
+test(macro, [-1], 0, 3, 40);
+test(macro, [-1], 13, 41, 97);
 
-test( "gobble", t => {
-
-	one( t, [], 0, 0, 0 );
-	one( t, [], 1, 0, 0 );
-	one( t, [], 0, 1, 0 );
-	one( t, [], 0, 0, 1 );
-	one( t, [], 0, 3, 40 );
-	one( t, [], 13, 41, 97 );
-
-
-	one( t, [-1], 0, 0, 0 );
-	one( t, [-1], 1, 0, 0 );
-	one( t, [-1], 0, 1, 0 );
-	one( t, [-1], 0, 0, 1 );
-	one( t, [-1], 0, 3, 40 );
-	one( t, [-1], 13, 41, 97 );
-
-
-	one( t, [-1, -2], 0, 0, 0 );
-	one( t, [-1, -2], 1, 0, 0 );
-	one( t, [-1, -2], 0, 1, 0 );
-	one( t, [-1, -2], 0, 0, 1 );
-	one( t, [-1, -2], 0, 3, 40 );
-	one( t, [-1, -2], 13, 41, 97 );
-
-
-});
+test(macro, [-1, -2], 0, 0, 0);
+test(macro, [-1, -2], 1, 0, 0);
+test(macro, [-1, -2], 0, 1, 0);
+test(macro, [-1, -2], 0, 0, 1);
+test(macro, [-1, -2], 0, 3, 40);
+test(macro, [-1, -2], 13, 41, 97);

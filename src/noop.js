@@ -1,5 +1,3 @@
-
-
-export default function noop () {
-	// this block intentionally left empty
+export default function noop() {
+	// This block intentionally left empty
 }

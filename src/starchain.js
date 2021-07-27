@@ -1,18 +1,15 @@
-import star from './star.js' ;
-import chain from './chain.js' ;
-import partial from './partial.js' ;
+import star from './star.js';
+import chain from './chain.js';
+import partial from './partial.js';
 
-export default function starchain ( callables ) {
+export default function starchain(callables) {
+	const args = [];
 
-	const args = [] ;
+	const len = callables.length;
 
-	const len = callables.length ;
-
-	for ( let i = 0 ; i < len ; ++i ) {
-		args.push( partial( star , [ callables[i] ] ) ) ;
+	for (let i = 0; i < len; ++i) {
+		args.push(partial(star, [callables[i]]));
 	}
 
-	return chain( args ) ;
-
+	return chain(args);
 }
-

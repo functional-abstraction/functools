@@ -1,7 +1,5 @@
-import bind from './bind.js' ;
+import bind from './bind.js';
 
-export default function partial ( callable , args ) {
-
-	return bind( callable , undefined , args );
-
+export default function partial(callable, args) {
+	return bind(callable, undefined, args);
 }

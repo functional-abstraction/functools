@@ -1,27 +1,17 @@
 import test from 'ava';
 import * as functools from '../../src/index.js';
 
+const f = (x, y, z) => x + 2 * y + 3 * z;
 
-function f ( x, y, z ) {
-	return x + 2*y + 3*z;
+const macro = (t, x, y, z) => {
+	t.deepEqual(functools.star(f, [x, y, z]), f(x, y, z));
 };
 
+macro.title = (title, x, y, z) => title ?? JSON.stringify([x, y, z]);
 
-function one ( t , x, y, z ) {
+const n = 1000;
+let i = n;
 
-	t.deepEqual( functools.star( f, [x, y, z] ), f( x, y, z ), JSON.stringify([x, y, z]) );
-
-};
-
-test( "star", t => {
-
-	var i, n;
-
-	n = 1000;
-	i = n;
-
-	while ( i-- ) {
-		one( t , Math.random(), Math.random(), Math.random() );
-	}
-
-});
+while (i--) {
+	test(macro, Math.random(), Math.random(), Math.random());
+}
