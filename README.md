@@ -23,7 +23,7 @@ p( -1 ) ; // 5 - 4 - 1 = 0
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/functional-abstraction/functools.svg)](https://codeclimate.com/github/functional-abstraction/functools/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/functional-abstraction/functools/main.svg)](https://codecov.io/gh/functional-abstraction/functools)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/functional-abstraction/functools.svg)](https://codeclimate.com/github/functional-abstraction/functools/trends/technical_debt)
-[![Documentation](http://functional-abstraction.github.io/functools/badge.svg)](http://functional-abstraction.github.io/functools/source.html)
+[![Documentation](https://functional-abstraction.github.io/functools/badge.svg)](https://functional-abstraction.github.io/functools/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@functional-abstraction/functools)](https://bundlephobia.com/result?p=@functional-abstraction/functools)
 
 ## Reference
