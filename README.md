@@ -13,7 +13,7 @@ p( -1 ) ; // 5 - 4 - 1 = 0
 
 [![License](https://img.shields.io/github/license/functional-abstraction/functools.svg)](https://raw.githubusercontent.com/functional-abstraction/functools/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@functional-abstraction/functools.svg)](https://www.npmjs.org/package/@functional-abstraction/functools)
-[![Build](https://img.shields.io/travis/functional-abstraction/functools/main.svg)](https://travis-ci.com/functional-abstraction/functools/branches)
+[![Tests](https://img.shields.io/github/workflow/status/functional-abstraction/functools/ci:test?event=push&label=tests)](https://github.com/functional-abstraction/functools/actions/workflows/ci:test.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/david/functional-abstraction/functools.svg)](https://david-dm.org/functional-abstraction/functools)
 [![Dev dependencies](https://img.shields.io/david/dev/functional-abstraction/functools.svg)](https://david-dm.org/functional-abstraction/functools?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/functional-abstraction/functools.svg)](https://github.com/functional-abstraction/functools/issues)
