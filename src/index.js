@@ -1,51 +1,15 @@
-import apply from './apply' ;
-import bind from './bind' ;
-import chain from './chain' ;
-import compose from './compose' ;
-import create from './create' ;
-import curry from './curry' ;
-import gobble from './gobble' ;
-import noop from './noop' ;
-import partial from './partial' ;
-import rbind from './rbind' ;
-import rcurry from './rcurry' ;
-import rpartial from './rpartial' ;
-import star from './star' ;
-import starchain from './starchain' ;
-import starcompose from './starcompose' ;
-
-export default {
-	apply ,
-	bind ,
-	chain ,
-	compose ,
-	create ,
-	curry ,
-	gobble ,
-	noop ,
-	partial ,
-	rbind ,
-	rcurry ,
-	rpartial ,
-	star ,
-	starchain ,
-	starcompose ,
-}
-
-export {
-	apply ,
-	bind ,
-	chain ,
-	compose ,
-	create ,
-	curry ,
-	gobble ,
-	noop ,
-	partial ,
-	rbind ,
-	rcurry ,
-	rpartial ,
-	star ,
-	starchain ,
-	starcompose ,
-}
+export {default as apply} from './apply.js';
+export {default as bind} from './bind.js';
+export {default as chain} from './chain.js';
+export {default as compose} from './compose.js';
+export {default as create} from './create.js';
+export {default as curry} from './curry.js';
+export {default as gobble} from './gobble.js';
+export {default as noop} from './noop.js';
+export {default as partial} from './partial.js';
+export {default as rbind} from './rbind.js';
+export {default as rcurry} from './rcurry.js';
+export {default as rpartial} from './rpartial.js';
+export {default as star} from './star.js';
+export {default as starchain} from './starchain.js';
+export {default as starcompose} from './starcompose.js';
