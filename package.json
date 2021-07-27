@@ -2,7 +2,59 @@
   "name": "@functional-abstraction/functools",
   "description": "functions code bricks for JavaScript",
   "version": "2.0.3",
+  "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
+  "homepage": "https://functional-abstraction.github.io/functools",
+  "repository": {
+    "url": "https://github.com/functional-abstraction/functools",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/functional-abstraction/functools/issues"
+  },
+  "keywords": [
+    "bricks",
+    "compose",
+    "curry",
+    "ender",
+    "function",
+    "functional",
+    "functools",
+    "javascript",
+    "js",
+    "partial"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "esdoc": "esdoc",
+    "lint-config": "fixpack --dryRun",
+    "lint-config-and-fix": "fixpack || fixpack",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "7.14.8",
+    "@babel/core": "7.14.8",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.14.8",
+    "@babel/register": "7.14.5",
+    "ava": "3.15.0",
+    "coveralls": "3.1.1",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "np": "7.5.0",
+    "nyc": "15.1.0"
+  },
   "ava": {
     "files": [
       "test/src/**/*"
@@ -25,57 +77,5 @@
         "sourceMaps": "inline"
       }
     }
-  },
-  "bugs": {
-    "url": "https://github.com/functional-abstraction/functools/issues"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/cli": "7.14.8",
-    "@babel/core": "7.14.8",
-    "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.14.8",
-    "@babel/register": "7.14.5",
-    "ava": "3.15.0",
-    "coveralls": "3.1.1",
-    "esdoc": "1.1.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "np": "7.5.0",
-    "nyc": "15.1.0",
-    "fixpack": "4.0.0"
-  },
-  "files": [
-    "lib"
-  ],
-  "homepage": "https://functional-abstraction.github.io/functools",
-  "keywords": [
-    "bricks",
-    "compose",
-    "curry",
-    "ender",
-    "function",
-    "functional",
-    "functools",
-    "javascript",
-    "js",
-    "partial"
-  ],
-  "license": "AGPL-3.0",
-  "main": "lib/index.js",
-  "repository": {
-    "url": "https://github.com/functional-abstraction/functools",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "rm -rf lib && babel src -d lib",
-    "cover": "nyc --reporter=lcov npm test",
-    "esdoc": "esdoc",
-    "prepare": "npm run build",
-    "release": "np",
-    "test": "ava",
-    "lint-config-and-fix": "fixpack || fixpack",
-    "lint-config": "fixpack --dryRun"
   }
 }
