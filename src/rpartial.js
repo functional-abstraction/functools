@@ -1,4 +1,4 @@
-import rbind from './rbind' ;
+import rbind from './rbind.js' ;
 
 export default function rpartial ( callable, args ) {
 

@@ -1,5 +1,5 @@
 import test from 'ava';
-import * as functools from '../../src';
+import * as functools from '../../src/index.js';
 
 
 function f ( x, y, z ) {

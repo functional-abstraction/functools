@@ -1,6 +1,6 @@
-import star from './star' ;
-import chain from './chain' ;
-import partial from './partial' ;
+import star from './star.js' ;
+import chain from './chain.js' ;
+import partial from './partial.js' ;
 
 export default function starchain ( callables ) {
 

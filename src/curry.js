@@ -1,4 +1,4 @@
-import bind from './bind' ;
+import bind from './bind.js' ;
 
 export default function curry ( callable, arity ) {
 

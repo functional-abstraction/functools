@@ -1,6 +1,6 @@
-import star from './star' ;
-import compose from './compose' ;
-import partial from './partial' ;
+import star from './star.js' ;
+import compose from './compose.js' ;
+import partial from './partial.js' ;
 
 export default function starcompose ( callables ) {
 

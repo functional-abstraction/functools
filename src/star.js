@@ -1,4 +1,4 @@
-import apply from './apply' ;
+import apply from './apply.js' ;
 
 export default function star ( callable , args ) {
 
