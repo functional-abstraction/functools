@@ -1,92 +1,92 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-functools/src/apply.js~apply",
+    "@functional-abstraction/functools/src/apply.js~apply",
     "function/index.html#static-function-apply",
-    "<span>apply</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/apply.js</span>",
+    "<span>apply</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/apply.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/bind.js~bind",
+    "@functional-abstraction/functools/src/bind.js~bind",
     "function/index.html#static-function-bind",
-    "<span>bind</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/bind.js</span>",
+    "<span>bind</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/bind.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/chain.js~chain",
+    "@functional-abstraction/functools/src/chain.js~chain",
     "function/index.html#static-function-chain",
-    "<span>chain</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/chain.js</span>",
+    "<span>chain</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/chain.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/compose.js~compose",
+    "@functional-abstraction/functools/src/compose.js~compose",
     "function/index.html#static-function-compose",
-    "<span>compose</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/compose.js</span>",
+    "<span>compose</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/compose.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/create.js~create",
+    "@functional-abstraction/functools/src/create.js~create",
     "function/index.html#static-function-create",
-    "<span>create</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/create.js</span>",
+    "<span>create</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/create.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/curry.js~curry",
+    "@functional-abstraction/functools/src/curry.js~curry",
     "function/index.html#static-function-curry",
-    "<span>curry</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/curry.js</span>",
+    "<span>curry</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/curry.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/gobble.js~gobble",
+    "@functional-abstraction/functools/src/gobble.js~gobble",
     "function/index.html#static-function-gobble",
-    "<span>gobble</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/gobble.js</span>",
+    "<span>gobble</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/gobble.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/noop.js~noop",
+    "@functional-abstraction/functools/src/noop.js~noop",
     "function/index.html#static-function-noop",
-    "<span>noop</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/noop.js</span>",
+    "<span>noop</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/noop.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/partial.js~partial",
+    "@functional-abstraction/functools/src/partial.js~partial",
     "function/index.html#static-function-partial",
-    "<span>partial</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/partial.js</span>",
+    "<span>partial</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/partial.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/rbind.js~rbind",
+    "@functional-abstraction/functools/src/rbind.js~rbind",
     "function/index.html#static-function-rbind",
-    "<span>rbind</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/rbind.js</span>",
+    "<span>rbind</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/rbind.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/rcurry.js~rcurry",
+    "@functional-abstraction/functools/src/rcurry.js~rcurry",
     "function/index.html#static-function-rcurry",
-    "<span>rcurry</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/rcurry.js</span>",
+    "<span>rcurry</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/rcurry.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/rpartial.js~rpartial",
+    "@functional-abstraction/functools/src/rpartial.js~rpartial",
     "function/index.html#static-function-rpartial",
-    "<span>rpartial</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/rpartial.js</span>",
+    "<span>rpartial</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/rpartial.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/star.js~star",
+    "@functional-abstraction/functools/src/star.js~star",
     "function/index.html#static-function-star",
-    "<span>star</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/star.js</span>",
+    "<span>star</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/star.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/starchain.js~starchain",
+    "@functional-abstraction/functools/src/starchain.js~starchain",
     "function/index.html#static-function-starchain",
-    "<span>starchain</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/starchain.js</span>",
+    "<span>starchain</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/starchain.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-functools/src/starcompose.js~starcompose",
+    "@functional-abstraction/functools/src/starcompose.js~starcompose",
     "function/index.html#static-function-starcompose",
-    "<span>starcompose</span> <span class=\"search-result-import-path\">@aureooms/js-functools/src/starcompose.js</span>",
+    "<span>starcompose</span> <span class=\"search-result-import-path\">@functional-abstraction/functools/src/starcompose.js</span>",
     "function"
   ],
   [
