@@ -1,6 +1,6 @@
 # Examples
 
-> More examples in [the test files](https://github.com/make-github-pseudonymous-again/js-functools/tree/main/test/src).
+> More examples in [the test files](https://github.com/functional-abstraction/functools/tree/main/test/src).
 
 ```js
 let f = x => x + 1 ;

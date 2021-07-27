@@ -12,7 +12,7 @@ import '@babel/polyfill' ;
 
 Then, import the library where needed
 ```js
-const functools = require( '@aureooms/js-functools' ) ;
+const functools = require( '@functional-abstraction/functools' ) ;
 // or
-import * as functools from '@aureooms/js-functools' ;
+import * as functools from '@functional-abstraction/functools' ;
 ```

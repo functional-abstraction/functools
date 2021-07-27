@@ -1,9 +1,9 @@
-[@aureooms/js-functools](https://make-github-pseudonymous-again.github.io/js-functools)
+[@functional-abstraction/functools](https://functional-abstraction.github.io/functools)
 ==
 
 Function tools for JavaScript.
-See [docs](https://make-github-pseudonymous-again.github.io/js-functools/index.html).
-Parent is [aureooms/js-library](https://github.com/make-github-pseudonymous-again/js-library).
+See [docs](https://functional-abstraction.github.io/functoolsindex.html).
+Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).
 
 ```js
 let j = ( a , b , c , x ) => a * x**2 + b * x + c ;
@@ -11,20 +11,20 @@ let p = partial( j , [ 5 , 4 , -1 ] ) ;
 p( -1 ) ; // 5 - 4 - 1 = 0
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-functools.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-functools/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-functools.svg)](https://www.npmjs.org/package/@aureooms/js-functools)
-[![Build](https://img.shields.io/travis/make-github-pseudonymous-again/js-functools/main.svg)](https://travis-ci.org/make-github-pseudonymous-again/js-functools/branches)
-[![Dependencies](https://img.shields.io/david/make-github-pseudonymous-again/js-functools.svg)](https://david-dm.org/make-github-pseudonymous-again/js-functools)
-[![Dev dependencies](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-functools.svg)](https://david-dm.org/make-github-pseudonymous-again/js-functools?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-functools.svg)](https://github.com/make-github-pseudonymous-again/js-functools/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-functools.svg)](https://www.npmjs.org/package/@aureooms/js-functools)
+[![License](https://img.shields.io/github/license/functional-abstraction/functools.svg)](https://raw.githubusercontent.com/functional-abstraction/functools/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@functional-abstraction/functools.svg)](https://www.npmjs.org/package/@functional-abstraction/functools)
+[![Build](https://img.shields.io/travis/functional-abstraction/functools/main.svg)](https://travis-ci.org/functional-abstraction/functools/branches)
+[![Dependencies](https://img.shields.io/david/functional-abstraction/functools.svg)](https://david-dm.org/functional-abstraction/functools)
+[![Dev dependencies](https://img.shields.io/david/dev/functional-abstraction/functools.svg)](https://david-dm.org/functional-abstraction/functools?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/functional-abstraction/functools.svg)](https://github.com/functional-abstraction/functools/issues)
+[![Downloads](https://img.shields.io/npm/dm/@functional-abstraction/functools.svg)](https://www.npmjs.org/package/@functional-abstraction/functools)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-functools.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-functools/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-functools.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-functools/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-functools/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-functools)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-functools.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-functools/trends/technical_debt)
-[![Documentation](http://make-github-pseudonymous-again.github.io/js-functools//badge.svg)](http://make-github-pseudonymous-again.github.io/js-functools//source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-functools)](https://bundlephobia.com/result?p=@aureooms/js-functools)
+[![Code issues](https://img.shields.io/codeclimate/issues/functional-abstraction/functools.svg)](https://codeclimate.com/github/functional-abstraction/functools/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/functional-abstraction/functools.svg)](https://codeclimate.com/github/functional-abstraction/functools/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/functional-abstraction/functools/main.svg)](https://codecov.io/gh/functional-abstraction/functools)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/functional-abstraction/functools.svg)](https://codeclimate.com/github/functional-abstraction/functools/trends/technical_debt)
+[![Documentation](http://functional-abstraction.github.io/functools/badge.svg)](http://functional-abstraction.github.io/functools/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@functional-abstraction/functools)](https://bundlephobia.com/result?p=@functional-abstraction/functools)
 
 ## Reference
 

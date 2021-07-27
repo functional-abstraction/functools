@@ -8,15 +8,15 @@ or [jspm](https://jspm.org/docs).
 
 ### yarn
 ```terminal
-yarn add @aureooms/js-functools
+yarn add @functional-abstraction/functools
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-functools --save
+npm install @functional-abstraction/functools --save
 ```
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-functools
+jspm install npm:@functional-abstraction/functools
 ```

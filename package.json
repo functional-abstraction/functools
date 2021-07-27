@@ -1,8 +1,8 @@
 {
-  "name": "@aureooms/js-functools",
+  "name": "@functional-abstraction/functools",
   "description": "functions code bricks for JavaScript",
   "version": "2.0.3",
-  "author": "aureooms",
+  "author": "make-github-pseudonymous-again",
   "ava": {
     "files": [
       "test/src/**/*"
@@ -27,7 +27,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-functools/issues"
+    "url": "https://github.com/functional-abstraction/functools/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -48,7 +48,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-functools/",
+  "homepage": "http://functional-abstraction.github.io/functools",
   "keywords": [
     "bricks",
     "compose",
@@ -64,7 +64,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-functools.git",
+    "url": "https://github.com/functional-abstraction/functools.git",
     "type": "git"
   },
   "scripts": {
