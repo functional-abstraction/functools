@@ -1,4 +1,4 @@
-[@functional-abstraction/functools](https://functional-abstraction.github.io/functools)
+:hammer_and_wrench: [@functional-abstraction/functools](https://functional-abstraction.github.io/functools)
 ==
 
 Function tools for JavaScript.
@@ -26,7 +26,7 @@ p( -1 ) ; // 5 - 4 - 1 = 0
 [![Documentation](https://functional-abstraction.github.io/functools/badge.svg)](https://functional-abstraction.github.io/functools/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@functional-abstraction/functools)](https://bundlephobia.com/result?p=@functional-abstraction/functools)
 
-## Reference
+## :scroll: Reference
 
   - https://docs.python.org/3/library/functions.html
   - https://docs.python.org/3/library/functools.html
