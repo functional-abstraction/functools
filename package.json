@@ -65,7 +65,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/functional-abstraction/functools.git",
+    "url": "https://github.com/functional-abstraction/functools",
     "type": "git"
   },
   "scripts": {
