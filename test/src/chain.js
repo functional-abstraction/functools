@@ -1,6 +1,6 @@
 import util from 'node:util';
 import test from 'ava';
-import * as functools from '../../src/index.js';
+import * as functools from '#module';
 
 const f = function (x) {
 	return x * x;

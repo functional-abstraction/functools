@@ -1,5 +1,5 @@
 import test from 'ava';
-import * as functools from '../../src/index.js';
+import * as functools from '#module';
 
 test('noop', (t) => {
 	const a = [1, 2, 3];

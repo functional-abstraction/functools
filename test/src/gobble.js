@@ -1,5 +1,5 @@
 import test from 'ava';
-import * as functools from '../../src/index.js';
+import * as functools from '#module';
 
 const f = (x, y, z) => 2 * x + y - z;
 
